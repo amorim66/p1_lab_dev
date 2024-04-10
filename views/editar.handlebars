@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Edição</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tela de Edição</h1>
+        <form action="/editar/{{cliente.id}}" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" value="{{cliente.nome}}" placeholder="Digite o nome">
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" class="form-control" id="endereco" name="endereco" value="{{cliente.endereco}}" placeholder="Digite o endereço">
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" class="form-control" id="bairro" name="bairro" value="{{cliente.bairro}}" placeholder="Digite o bairro">
+            </div>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" class="form-control" id="cep" name="cep" value="{{cliente.cep}}" placeholder="Digite o CEP">
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="form-control" id="cidade" name="cidade" value="{{cliente.cidade}}" placeholder="Digite a cidade">
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <input type="text" class="form-control" id="estado" name="estado" value="{{cliente.estado}}" placeholder="Digite o estado">
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+    </div>
+</body>
+
+</html>
